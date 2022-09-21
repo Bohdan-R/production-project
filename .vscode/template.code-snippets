@@ -1,0 +1,10 @@
+{
+	"template": {
+	"scope": "javascript,typescript",
+	"prefix": "tmplt",
+	"body": [
+		"<nav className={}>"
+	],
+	"description": "Template for component"
+	}
+}
