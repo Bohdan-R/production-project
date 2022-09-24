@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { classNames } from "shared/lib/classNames/classNames";
 import AppLink, { AppLinkTheme } from "shared/ui/AppLink/AppLink";
-import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
+import { LanguageSwitcher } from "widgets/LanguageSwitcher";
+import { ThemeSwitcher } from "widgets/ThemeSwitcher";
 import styles from "./Navbar.module.scss";
 
 interface INavbarProps {
@@ -9,19 +11,21 @@ interface INavbarProps {
 }
 
 export const Navbar = ({ className }: INavbarProps) => {
+  const { t } = useTranslation();
   return (
     <div className={classNames(styles.navbar, {}, [className])}>
       <ThemeSwitcher />
+      <LanguageSwitcher />
       <div className={styles.links}>
         <AppLink theme={AppLinkTheme.PRIMARY} to={"/"} className={styles.link}>
-          Main
+          {t("main")}
         </AppLink>
         <AppLink
           theme={AppLinkTheme.PRIMARY}
           to={"/about"}
           className={styles.link}
         >
-          About
+          {t("about")}
         </AppLink>
       </div>
     </div>
