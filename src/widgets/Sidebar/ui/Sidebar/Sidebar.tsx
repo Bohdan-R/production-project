@@ -1,6 +1,7 @@
-import React, { FC, useState } from "react";
-import { classNames } from "shared/lib/classNames/classNames";
-import styles from "./Sidebar.module.scss";
+import React, { FC, useState } from 'react';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Button } from 'shared/ui/Button/Button';
+import styles from './Sidebar.module.scss';
 
 interface ISidebarProps {
   className?: string;
@@ -18,7 +19,7 @@ export const Sidebar: FC<ISidebarProps> = ({ className }) => {
         className,
       ])}
     >
-      <button onClick={onToggle}>Toggle</button>
+      <Button onClick={onToggle}>Toggle</Button>
     </div>
   );
 };

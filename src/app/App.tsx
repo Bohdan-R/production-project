@@ -1,16 +1,16 @@
-import React, { Suspense } from "react";
-import "./styles/index.scss";
-import { useTheme } from "app/providers/ThemeProvider";
-import { classNames } from "shared/lib/classNames/classNames";
-import { AppRouter } from "./providers/Router";
-import { Navbar } from "widgets/Navbar";
-import { Sidebar } from "widgets/Sidebar/ui";
+import React, { Suspense } from 'react';
+import './styles/index.scss';
+import { useTheme } from 'app/providers/ThemeProvider';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Navbar } from 'widgets/Navbar';
+import { Sidebar } from 'widgets/Sidebar/ui';
+import { AppRouter } from 'app/providers/Router';
 
-const App = () => {
+function App() {
   const { theme } = useTheme();
 
   return (
-    <div className={classNames("app", {}, [theme])}>
+    <div className={classNames('app', {}, [theme])}>
       <Suspense fallback="">
         <Navbar />
         <div className="content-page">
@@ -20,6 +20,6 @@ const App = () => {
       </Suspense>
     </div>
   );
-};
+}
 
 export default App;
