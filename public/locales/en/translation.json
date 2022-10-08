@@ -2,5 +2,6 @@
   "example": "example",
   "language": "English",
   "main": "Main",
-  "about": "About"
+  "about": "About",
+  "not-found-page": "Page not found"
 }
