@@ -17,11 +17,15 @@ export function Navbar({ className }: INavbarProps) {
       <ThemeSwitcher />
       <LanguageSwitcher />
       <div className={styles.links}>
-        <AppLink theme={AppLinkTheme.PRIMARY} to="/" className={styles.link}>
+        <AppLink
+          theme={AppLinkTheme.SECONDARY}
+          to="/"
+          className={styles.link}
+        >
           {t('main')}
         </AppLink>
         <AppLink
-          theme={AppLinkTheme.PRIMARY}
+          theme={AppLinkTheme.SECONDARY}
           to="/about"
           className={styles.link}
         >

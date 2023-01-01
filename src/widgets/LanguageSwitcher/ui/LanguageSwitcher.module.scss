@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  height: 25px;
+}
+
+.switcher {
+  width: 25px;
+  height: 25px;
+  color: var(--inverted-primary-color);
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.selected {
+  color: red;
+}
+
+.line {
+  height: 100%;
+  width: 2px;
+
+  /* margin: 0 3px; */
+
+  background-color: var(--inverted-primary-color);
+}

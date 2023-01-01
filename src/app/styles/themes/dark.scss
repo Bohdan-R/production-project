@@ -1,8 +1,12 @@
-.app.dark {
-  --bg-color: #282c34;
-  --inverted-bg-color: #fafafa;
-  --primary-color: #fac863;
-  --secondary-color: #fff;
-  --inverted-primary-color: #002984;
-  --inverted-secondary-color: #212121;
+.app {
+  /* transition: 1000ms; */
+
+  &.dark {
+    --bg-color: #282c34;
+    --inverted-bg-color: #fafafa;
+    --primary-color: #fac863;
+    --secondary-color: #212121;
+    --inverted-primary-color: #212121;
+    --inverted-secondary-color: #fac863;
+  }
 }
