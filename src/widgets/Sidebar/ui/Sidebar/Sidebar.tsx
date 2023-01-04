@@ -10,16 +10,17 @@ interface ISidebarProps {
 export const Sidebar: FC<ISidebarProps> = ({ className }) => {
   const [collapsed, setCollapsed] = useState(false);
 
-  const onToggle = () => {
+  const onToggle = async () => {
     setCollapsed(!collapsed);
   };
   return (
     <div
+      data-testid="sidebar"
       className={classNames(styles.sidebar, { [styles.collapsed]: collapsed }, [
         className,
       ])}
     >
-      <Button onClick={onToggle}>Toggle</Button>
+      <Button data-testid="sidebar-toggle-btn" onClick={onToggle}>Toggle</Button>
     </div>
   );
 };
