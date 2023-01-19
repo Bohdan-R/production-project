@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 /* import { Button } from 'shared/ui/Button/Button'; */
-import { Sidebar } from './Sidebar';
+import { Sidebar } from 'widgets/Sidebar/ui/Sidebar';
 
 describe('Button components TEST', () => {
   test('Test render', () => {

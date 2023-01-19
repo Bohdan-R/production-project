@@ -1,12 +1,8 @@
-.app {
-  /* transition: 1000ms; */
-
-  &.light {
-    --bg-color: #fafafa;
-    --inverted-bg-color: #282c34;
-    --primary-color: #212121;
-    --secondary-color: #fac863;
-    --inverted-primary-color: #fac863;
-    --inverted-secondary-color: #212121;
-  }
+.app.light {
+  --bg-color: #fafafa;
+  --inverted-bg-color: #282c34;
+  --primary-color: #212121;
+  --secondary-color: #fac863;
+  --inverted-primary-color: #fac863;
+  --inverted-secondary-color: #212121;
 }
