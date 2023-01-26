@@ -2,10 +2,51 @@
   position: relative;
   height: calc(100vh - var(--navbar-height));
   width: var(--sidebar-width);
+  padding: 20px;
   background: var(--inverted-bg-color);
   transition: width 250ms;
 }
 
 .collapsed {
   width: var(--sidebar-width-collapsed);
+}
+
+.collapsed-btn {
+  position: absolute;
+  right: -32px;
+  bottom: 32px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+
+  &-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--inverted-primary-color);
+
+    & svg {
+      fill: var(--primary-color);
+    }
+  }
+
+  &-content {
+    display: block;
+    margin-left: 10px;
+
+    transition: 250ms;
+  }
+}
+
+.collapsed {
+  .link-content {
+    display: none;
+  }
 }

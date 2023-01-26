@@ -16,22 +16,6 @@ export function Navbar({ className }: INavbarProps) {
     <div className={classNames(styles.navbar, {}, [className])}>
       <ThemeSwitcher />
       <LanguageSwitcher />
-      <div className={styles.links}>
-        <AppLink
-          theme={AppLinkTheme.SECONDARY}
-          to="/"
-          className={styles.link}
-        >
-          {t('main')}
-        </AppLink>
-        <AppLink
-          theme={AppLinkTheme.SECONDARY}
-          to="/about"
-          className={styles.link}
-        >
-          {t('about')}
-        </AppLink>
-      </div>
     </div>
   );
 }
