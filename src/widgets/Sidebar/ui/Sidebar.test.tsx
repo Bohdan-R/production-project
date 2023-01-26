@@ -1,16 +1,16 @@
 import React from 'react';
-import { fireEvent, render, screen } from '@testing-library/react';
-/* import { Button } from 'shared/ui/Button/Button'; */
+import { fireEvent, screen } from '@testing-library/react';
 import { Sidebar } from 'widgets/Sidebar/ui/Sidebar';
+import { ComponentRender } from 'shared/lib/tests/componentRender/componentRender';
 
-describe('Button components TEST', () => {
+describe('Sidebar component TEST', () => {
   test('Test render', () => {
-    render(<Sidebar />);
+    ComponentRender(<Sidebar />);
     expect(screen.getByTestId('sidebar')).toBeInTheDocument();
   });
 
   test('Test sidebar className', () => {
-    render(<Sidebar />);
+    ComponentRender(<Sidebar />);
     const toggleBtn = screen.getByTestId('sidebar-toggle-btn');
     expect(screen.getByTestId('sidebar')).toBeInTheDocument();
     fireEvent.click(toggleBtn);
