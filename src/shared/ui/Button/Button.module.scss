@@ -4,11 +4,16 @@
   color: var(--primary-color);
 }
 
-.clear {
+.clear,
+.clear-inverted {
   padding: 0;
   border: none;
   background: none;
   outline: none;
+}
+
+.clear-inverted {
+  color: var(--inverted-primary-color);
 }
 
 .outline {
@@ -55,13 +60,13 @@
 }
 
 .size_m {
-  font: var(--font-m)
+  font: var(--font-m);
 }
 
 .size_l {
-  font: var(--font-l)
+  font: var(--font-l);
 }
 
 .size_xl {
-  font: var(--font-xl)
+  font: var(--font-xl);
 }
